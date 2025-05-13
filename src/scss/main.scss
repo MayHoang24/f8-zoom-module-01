@@ -4,13 +4,16 @@
 @use "./layout/grid";
 @use "./layout/header";
 @use "./layout/footer";
+@use "./layout/common";
+
+
+// Components
+@use "./components/button";
 
 // Pages
 @use "./pages/home";
 @use "./pages/about";
 
-// Components
-@use "./components/button";
 
 // =====Common=====
 *{

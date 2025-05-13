@@ -3,11 +3,227 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Justice Law Firm</title>
+        <%- include("./partials/head.ejs") %>
     </head>
     <body>
-        <%- include("./partials/header.ejs") %>
-        <h1>home</h1>
+        <!-- Header -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <%- include("./partials/header.ejs") %>
+                    </div>
+                </div>
+                <section class="hero">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="hero__content">
+                                <p class="sub-heading hero__sub-heading">
+                                    #1 Law Firm in New York
+                                </p>
+                                <h1 class="heading hero__heading">
+                                    Where People Meets Personalized Support.
+                                </h1>
+                                <p class="heading-desc hero__desc">
+                                    Where every injury is personal. We are a
+                                    different kind of law firm. Let our small,
+                                    passionate group of trial lawyers fight for
+                                    your rights!
+                                </p>
+                                <a href="#!" class="btn hero__btn"
+                                    >Get a Consultations</a
+                                >
+                            </div>
+                        </div>
+                        <div class="col-5 offset-1">
+                            <div class="hero__thumb">
+                                <img
+                                    src="./images/hero-img.png"
+                                    alt=""
+                                    class="hero__img"
+                                />
+                                <img
+                                    src="./images/hero-img-design-1.svg"
+                                    alt=""
+                                    class="hero__img-design-1"
+                                />
+                                <img
+                                    src="./images/hero-img-design-2.svg"
+                                    alt=""
+                                    class="hero__img-design-2"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <main>
+            <!-- About -->
+            <section class="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="about__thumb">
+                                <img
+                                    src="./images/about-img.png"
+                                    alt=""
+                                    class="about__img"
+                                />
+                                <img
+                                    src="./images/about-img-design.svg"
+                                    alt=""
+                                    class="about__img-design"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-5 offset-1">
+                            <div class="about__content">
+                                <p class="sub-heading about__sub-heading">
+                                    #About Us
+                                </p>
+                                <h2 class="heading about__heading">
+                                    Get the Guidance, Support, and Counsel
+                                </h2>
+                                <p class="heading-desc about__desc">
+                                    Every year hundreds of clients choose our
+                                    firm because of our dedication to advocating
+                                    for our clients before, during and after
+                                    closing.
+                                </p>
+
+                                <div class="about-quantity">
+                                    <div class="about-quantity__info">
+                                        <strong>1782</strong>
+                                        <p>Law Cases</p>
+                                    </div>
+                                    <div class="about-quantity__info">
+                                        <strong>10+</strong>
+                                        <p>Lawyer</p>
+                                    </div>
+                                    <div class="about-quantity__info">
+                                        <strong>98%</strong>
+                                        <p>Happy Clients</p>
+                                    </div>
+                                </div>
+                                <a href="#!" class="btn about__btn"
+                                    >Learn More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+
+            <section class="services">
+                <div class="container">
+                    <div class="services__info">
+                        <p class="sub-heading services__sub-heading">
+                            #Services
+                        </p>
+                        <h2 class="heading services__heading">
+                            Our Practice Areas
+                        </h2>
+                        <p class="heading-desc services__desc">
+                            Our Law Office provides a professional experience
+                            for all our clients, helping them navigate their
+                            legal rights.
+                        </p>
+                    </div>
+                    <div class="services__list">
+                        <div class="row row-cols-3 gy-3">
+                            <!-- Col 1 -->
+                            <div class="col">
+                                <div class="services__item">
+                                    <img
+                                        src="./images/services-img-1.png"
+                                        alt=""
+                                        class="services__thumb"
+                                    />
+                                    <a
+                                        href="#!"
+                                        class="btn services__item-btn active"
+                                        >Personal Injury Law</a
+                                    >
+                                </div>
+                            </div>
+                            <!-- Col 2 -->
+                            <div class="col">
+                                <div class="services__item">
+                                    <img
+                                        src="./images/services-img-2.png"
+                                        alt=""
+                                        class="services__thumb"
+                                    />
+                                    <a href="#!" class="btn services__item-btn"
+                                        >Employment Law</a
+                                    >
+                                </div>
+                            </div>
+                            <!-- Col 3 -->
+                            <div class="col">
+                                <div class="services__item">
+                                    <img
+                                        src="./images/services-img-3.png"
+                                        alt=""
+                                        class="services__thumb"
+                                    />
+                                    <a href="#!" class="btn services__item-btn"
+                                        >Immigration Law</a
+                                    >
+                                </div>
+                            </div>
+                            <!-- Col 4 -->
+                            <div class="col">
+                                <div class="services__item">
+                                    <img
+                                        src="./images/services-img-4.png"
+                                        alt=""
+                                        class="services__thumb"
+                                    />
+                                    <a href="#!" class="btn services__item-btn"
+                                        >Family Law</a
+                                    >
+                                </div>
+                            </div>
+                            <!-- Col 5 -->
+                            <div class="col">
+                                <div class="services__item">
+                                    <img
+                                        src="./images/services-img-5.png"
+                                        alt=""
+                                        class="services__thumb"
+                                    />
+                                    <a href="#!" class="btn services__item-btn"
+                                        >Divorce Law</a
+                                    >
+                                </div>
+                            </div>
+                            <!-- Col 6 -->
+                            <div class="col">
+                                <div class="services__item">
+                                    <img
+                                        src="./images/services-img-6.png"
+                                        alt=""
+                                        class="services__thumb"
+                                    />
+                                    <a href="#!" class="btn services__item-btn"
+                                        >Personal Injury Law</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#!" class="btn services__btn">View All</a>
+                </div>
+            </section>
+        </main>
+
         <%- include("./partials/footer.ejs") %>
         <script type="module" src="./main.js"></script>
     </body>

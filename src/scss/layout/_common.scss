@@ -1,0 +1,29 @@
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo{
+    display: inline-block;
+    width: 84px;
+    height: 67px;
+    object-fit: cover;
+}
+
+.sub-heading, .heading-desc{
+    color: #586863;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.sub-heading{
+    font-family: "Roboto Slab";
+}
+
+.heading{
+    color: #0E1412;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.24;
+}
