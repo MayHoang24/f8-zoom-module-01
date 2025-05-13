@@ -9,11 +9,23 @@
     &__top{
         display: flex;
         align-items: center;
+
+        @include mixins.screen(xl){
+            
+        }
     }
 
     .nav{
         margin-left: auto;
         margin-right: 93px;
+
+        @include mixins.screen(xl){
+            margin: 0 auto;
+        }
+
+         @include mixins.screen(lg){
+            margin: 0 30px;
+        }
 
         &__list{
             display: flex;
@@ -24,13 +36,12 @@
             transition: color ease 0.3s;
             color: #0E1412;
             line-height: 1.75;
-        }
 
-        &__item:not(:nth-child(4)){
+             &:not(:nth-child(4)){
             margin-right: 10px;
-        }
+            }
 
-        &__item:not(:nth-child(4))::after {
+            &:not(:nth-child(4))::after {
             position: absolute;
             content: "";
             width: 6px;
@@ -41,10 +52,20 @@
             right: 5px;
             rotate: -45deg;
             border-radius: 1px;
+            transition: rotate ease 0.3s;
+        }
         }
 
         .active, &__item:hover {
             color: #FD6038;
+
+            &.nav{
+                &__item:not(:nth-child(4))::after{
+                    top: 23px;
+                    rotate: 135deg;
+                }
+            }
+
         }
 
         &__link{
@@ -56,6 +77,10 @@
     &__phone{
         color: #0E1412;
         line-height: 1.75;
+
+        @include mixins.screen(lg){
+            margin-left: auto;
+        }
 
         strong{
         color: #0E1412;

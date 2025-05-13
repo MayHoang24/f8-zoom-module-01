@@ -1,4 +1,5 @@
 @use "../variables";
+@use "/scss/_mixins.scss";
 
 // =======Header========
 .header{
@@ -11,6 +12,15 @@
         font-size: 2.2rem;
         font-weight: 700;
         line-height: 1.45;
+
+         @include mixins.screen(lg){
+            font-size: 1.8rem;
+        }
+
+        }
+
+        @include mixins.screen(lg){
+
         }
     }
 
@@ -41,12 +51,11 @@
 
         &__thumb{
             position: relative;
-            max-width: 470px;
+            max-width: 100%;
             max-height: 476px;
             background: #017848;
-        }
 
-        &__thumb::before{
+             &::before{
             position: absolute;
             content: "";
             width: 30%;
@@ -54,6 +63,7 @@
             background: #FED464;
             bottom: 0;
             left: 0;
+            }
         }
 
         &__img{
@@ -85,7 +95,7 @@
 
     &__thumb{
         position: relative;
-        max-width: 570px;
+        max-width: 100%;
         max-height: 570px;
     }
 
@@ -148,7 +158,7 @@
 .services{
     margin-top: 150px;
 
-    &__info{
+    &__content{
         text-align: center;
     }
 
@@ -174,7 +184,7 @@
 
     &__item{
         position: relative;
-        max-width: 370px;
+        max-width: 100%;
         max-height: 370px;
 
         &-btn{
@@ -203,5 +213,104 @@
         margin-left: 50%;
         translate: -50%;
         min-width: 136px;
+    }
+}
+
+// =======Feature========
+.feature{
+    margin-top: 150px;
+
+    &__thumb{
+        position: relative;
+        max-width: 100%;
+        max-height: 570px;
+
+        &-before{
+            &::before{
+            position: absolute;
+            content: "";
+            width: 3.6%;
+            height: 38.6%;
+            background: #FD6038;
+            top: 0;
+            right: 0;
+        }
+        }
+
+        &-after{
+            &::before{
+            position: absolute;
+            content: "";
+            width: 3.6%;
+            height: 38.6%;
+            background: #017848;
+            bottom: 0;
+            right: 0;
+        }
+        }
+    }
+
+    &__img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+
+        &-design-1{
+            position: absolute;
+            top: 191px;
+            left: -49px;
+        }
+
+        &-design-2{
+            position: absolute;
+            bottom: 209px;
+            left: -65px;
+        }
+    }
+
+    &__content{
+        margin: 90px 0;
+    }
+
+    &__heading{
+        margin-top: 6px;
+    }
+
+    &__desc{
+        margin-top: 18px;
+    }
+
+    &__list{
+        margin-top: 28px;
+        color: #0E1412;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.67;
+    }
+
+    &__item{
+        position: relative;
+        margin-top: 12px;
+        margin-left: 28px;
+
+        &::before{
+            position: absolute;
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: currentColor;
+            top: 14px;
+            left: -14px;
+        }
+    }
+
+    &__btn{
+        margin-top: 38px;
+        min-width: 180px;
+    }
+
+    &__bottom{
+        margin-top: 150px;
     }
 }

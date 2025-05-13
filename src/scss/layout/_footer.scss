@@ -1,0 +1,83 @@
+@use "../variables";
+@use "/scss/_mixins.scss";
+
+.footer{
+    background: #0E1412;
+    padding: 100px 0 28px 0;
+
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+
+        padding-bottom: 55px;
+        border-bottom: 1px solid #313D39;
+    }
+
+    &__col{
+        max-width: 470px;
+        max-height: 268px
+    }
+
+    &__heading{
+        color: #FFF;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    &__list{
+        margin-top: 24px;
+        color: #BECCC7;
+    }
+
+    &__item{
+        margin-top: 16px;
+        line-height: 1.75;
+    }
+
+    &__map{
+        border-radius: 6px;
+    }
+    
+    &__logo{
+        margin-top: 28px;
+        color: #fff;
+    }
+
+    &__bottom{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright{
+        color: #BECCC7;
+        font-size: 1.4rem;
+        line-height: 1.71;
+    }
+
+    &__social{
+        display: flex;
+        gap: 12px;
+    }
+
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        background: #313d39;
+
+        &:hover{
+            background: #FD6038;
+        }
+    }
+
+    .active{
+        background: #FD6038;
+    }
+}
+
