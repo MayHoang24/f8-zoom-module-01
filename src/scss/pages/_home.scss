@@ -552,6 +552,12 @@
 
     &__question{
         margin-right: 30px;
+        transition: all ease 0.4s;
+
+        &:hover{
+            color: #FD6038;
+            font-weight: 600;
+        }
     }
 
     &__question + &__question{
@@ -571,7 +577,7 @@
         }
     }
 
-    &__label{
+    &__item-inner{
         display: flex;
         align-items: flex-end;
     }
@@ -586,7 +592,7 @@
         overflow-y: auto;
     }
 
-    #open-sub-title-1:checked ~ &__label{
+    #open-sub-title-1:checked ~ &__item-inner{
         .faq__btn{
             background: #FD6038;
         }
@@ -597,7 +603,7 @@
        }
     }
 
-    #open-sub-title-2:checked ~ &__label{
+    #open-sub-title-2:checked ~ &__item-inner{
         .faq__btn{
             background: #FD6038;
         }
@@ -608,7 +614,7 @@
        }
     }
 
-    #open-sub-title-3:checked ~ &__label{
+    #open-sub-title-3:checked ~ &__item-inner{
         .faq__btn{
             background: #FD6038;
         }
@@ -629,6 +635,7 @@
         font-size: 2.2rem;
         font-weight: 700;
         line-height: 1.45;
+        cursor: pointer;
     }
 
     &__btn{
@@ -638,6 +645,7 @@
         width: 28px;
         height: 28px;
         background: #0E1412;
+        cursor: pointer;
         transition: background ease 0.4s;
 
         &:hover{
