@@ -3,26 +3,6 @@
 
 // =======Header========
 .header{
-    &__phone{
-        color: #0E1412;
-        line-height: 1.75;
-
-        strong{
-        color: #0E1412;
-        font-size: 2.2rem;
-        font-weight: 700;
-        line-height: 1.45;
-
-         @include mixins.screen(lg){
-            font-size: 1.8rem;
-        }
-
-        }
-
-        @include mixins.screen(lg){
-
-        }
-    }
 
     .hero{
         margin-top: 154px;
@@ -218,7 +198,7 @@
 
 // =======Feature========
 .feature{
-    margin-top: 150px;
+    margin: 150px 0;
 
     &__thumb{
         position: relative;
@@ -312,5 +292,90 @@
 
     &__bottom{
         margin-top: 150px;
+    }
+}
+
+// =======Team========
+.team{
+    background: #0E1412;
+    padding: 100px 0;
+
+    &__content{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 470px;
+    }
+
+    &__sub-heading{
+        color: #FD6038;
+    }
+
+    &__heading{
+        margin-top: 6px;
+        color: #fff;
+    }
+
+    &__desc{
+        margin-top: 18px;
+    }
+
+    &__info{
+        position: relative;
+        max-width: 100%;
+        max-height: 448px;
+        margin-bottom: 30px;
+
+         &-btn{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            min-width: 170px;
+            bottom: 90px;
+            left: 99px;
+            z-index: 1;
+            transition: all ease 0.5s;
+        }
+
+        &:hover{
+            & > .team__info-btn{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &__thumb{
+        max-width: 100%;
+        max-height: 82.5%;
+        object-fit: cover;
+    }
+
+    .active{
+        & > .team__info-btn{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__title{
+        margin-top: 18px;
+        color: #fff;
+        text-align: center; 
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.45;
+    }
+
+    &__sub-title{
+        color: #BECCC7;
+        text-align: center;
+        line-height: 1.75;
+    }
+
+    &__btn{
+        margin-top: 25px;
+        margin-left: 50%;
+        translate: -50%;
+        min-width: 170px;
     }
 }

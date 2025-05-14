@@ -36,6 +36,13 @@
         line-height: 1.75;
     }
 
+    &__link{
+        transition: color ease 0.4s;
+        &:hover{
+            color: #FD6038;
+        }
+    }
+
     &__map{
         border-radius: 6px;
     }

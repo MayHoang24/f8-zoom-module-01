@@ -1,10 +1,9 @@
-@use "/scss/_variables.scss";
+@use "../variables";
 @use "/scss/_mixins.scss";
 
 .header{
     background: #F8EBC9;
-    min-height: 859px;
-    padding: 30px 0;
+    padding: 30px 0 140px 0;
 
     &__top{
         display: flex;
