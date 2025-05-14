@@ -92,7 +92,7 @@
     }
 
     &__content{
-        margin: 64px 0;
+        margin-top: 64px;
     }
 
     &__sub-heading{
@@ -249,7 +249,7 @@
     }
 
     &__content{
-        margin: 90px 0;
+        margin-top: 90px;
     }
 
     &__heading{
@@ -772,7 +772,7 @@
 .cta{
     background: #017848;
     padding: 100px 0;
-    text-align: center;
+    margin-top: 150px;
 
     &__content{
         margin: 0 auto;

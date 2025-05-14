@@ -1,0 +1,51 @@
+@use "../variables";
+@use "./home";
+@use "/scss/_mixins.scss";
+
+.header{
+    .about-hero{
+        max-width: 670px;
+        margin: 73px auto 100px;
+        text-align: center;
+    }
+
+    &__sub-heading, &__desc{
+        color: #0E1412;
+    }
+}
+
+// ========Story=======
+.story{
+    margin-top: 150px;
+
+    &__content{
+        margin-top: 41px;
+    }
+
+    &__thumb{
+        position: relative;
+        max-height: 570px;
+
+        &::before{
+            position: absolute;
+            content: "";
+            width: 3.5%;
+            height: 38.6%;
+            background: #FED464;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    &__img-design{
+        position: absolute;
+        bottom: 110px;
+        left: -57px;
+    }
+}
