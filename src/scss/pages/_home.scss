@@ -759,3 +759,33 @@
         }
     }
 }
+
+// =======CTA========
+.cta{
+    background: #017848;
+    padding: 100px 0;
+    text-align: center;
+
+    &__content{
+        margin: 0 auto;
+        max-width: 470px;
+        color: #fff;
+    }
+
+    &__sub-heading , &__heading, &__desc{
+        color: #fff;
+    }
+
+    &__heading{
+        margin-top: 6px;
+    }
+
+    &__desc{
+        margin-top: 18px;
+    }
+
+    &__btn{
+        margin-top: 38px;
+        min-width: 242px;
+    }
+}
