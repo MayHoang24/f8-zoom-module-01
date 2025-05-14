@@ -379,3 +379,38 @@
         min-width: 170px;
     }
 }
+
+// =======Awards========
+.awards{
+    background: #F8EBC9;
+    padding: 100px 0;
+
+    &__content{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__sub-heading{
+        color: #0E1412;
+    }
+
+    &__heading{
+        margin-top: 6px;
+    }
+
+    &__thumb{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        min-height: 270px;
+        background: #fff;
+    }
+
+    &__img{
+        max-width: 50.5%;
+        max-height: 37%;
+        object-fit: cover;
+    }
+}
