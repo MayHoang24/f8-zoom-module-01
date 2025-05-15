@@ -1,5 +1,4 @@
 @use "../variables";
-@use "./home";
 @use "/scss/_mixins.scss";
 
 .header{
@@ -47,5 +46,89 @@
         position: absolute;
         bottom: 110px;
         left: -57px;
+    }
+}
+
+// ========Gallery=======
+.gallery{
+    margin-top: 150px;
+
+    &__content{
+        max-width: 670px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__thumb{
+        margin-top: 70px;
+        max-height: 570px;
+    }
+
+    &__img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+// ========About Data=======
+.about-data{
+    margin-top: 70px;
+
+    &__inner{
+        background: #FED464;
+        padding: 55px 216px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    &__content{
+        text-align: center;
+
+    }
+
+    &__title{
+        color: #0E1412;
+        font-size: 6rem;
+        font-weight: 800;
+        line-height: 1.17;
+    }
+
+    &__sub-title{
+        color: #0E1412;
+        font-size: 1.8rem;
+        line-height: 1.67;
+    }
+}
+
+// ========Video=======
+.video{
+    margin: 150px 0;
+
+     &__content{
+        max-width: 670px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__thumb{
+        position: relative;
+        margin-top: 70px;
+        max-height: 570px;
+    }
+
+    &__img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+
+        &-btn-play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+        }
     }
 }
