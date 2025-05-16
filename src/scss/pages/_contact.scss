@@ -1,0 +1,83 @@
+@use "../variables";
+@use "/scss/_mixins.scss";
+
+.contact{
+    margin: 100px 0 150px;
+
+    &__sub-heading{
+        font-weight: 500;
+    }
+
+    &__heading{
+        margin-top: 12px;
+        max-width: 670px;
+    }
+
+    &__desc{
+        max-width: 530px;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: -0.16px;
+    }
+
+    &__form{
+        margin-top: 70px;
+    }
+
+    &__group{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 24px;
+
+    }
+
+    &__input{
+        display: inline-block;
+        padding: 18px 30px;
+        width: 570px;
+        max-width: 570px;
+        height: 60px;
+        background: #F2F2F2;
+        border: none;
+        outline: none;
+    }
+
+    &__input, &__textarea{
+         color: #586863;
+        font-size: 1.4rem;
+        line-height: 1.71;
+    }
+
+    &__input:focus, &__textarea:focus{
+        border: 1px solid #586863;
+    }
+
+    &__textarea{
+        margin-top: 24px;
+        padding: 20px 30px;
+        width: 100%;
+        min-height: 150px;
+        border: none;
+        outline: none;
+        background: #F2F2F2;
+    }
+
+    &__btn{
+        margin-top: 40px;
+        min-width: 144px;
+        height: 62px;
+        border-radius: 99px;
+        background: #0E1412;
+
+        color: #FFF;
+        font-weight: 600;
+        line-height: 1.75;
+
+        &:hover{
+            background: #FD6038
+        }
+    }
+}

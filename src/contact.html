@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Justice Law Firm</title>
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <%- include("./partials/header.ejs") %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <main>
+            <div class="container">
+                <section class="contact">
+                    <p class="contact__sub-heading sub-heading">Contact us</p>
+                    <h1 class="heading contact__heading">
+                        We Are Always Ready To Hear For You.
+                    </h1>
+                    <p class="heading-desc contact__desc">
+                        The right move at the right time saves your investment.
+                        live the dream of expanding your business.
+                    </p>
+                    <form action="" class="contact__form" autocomplete="off">
+                        <div class="contact__group">
+                            <input
+                                type="text"
+                                class="contact__input"
+                                placeholder="Enter your name"
+                            />
+                            <input
+                                type="text"
+                                class="contact__input"
+                                placeholder="Company (optional)"
+                            />
+                            <input
+                                type="email"
+                                class="contact__input"
+                                placeholder="Your email"
+                            />
+                            <input
+                                type="tel"
+                                class="contact__input"
+                                placeholder="Phone number"
+                            />
+                        </div>
+                        <textarea
+                            class="contact__textarea"
+                            placeholder="Tell us about yourself"
+                        ></textarea>
+                        <button class="btn contact__btn">Contact us</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <%- include("./partials/footer.ejs") %>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
