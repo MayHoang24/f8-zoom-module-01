@@ -37,6 +37,7 @@
     }
 
     &__link{
+        word-wrap: normal;
         transition: color ease 0.4s;
         &:hover{
             color: #FD6038;
