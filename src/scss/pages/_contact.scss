@@ -26,10 +26,13 @@
     }
 
     &__group{
+        --columns: 2;
+        --spacing: 30px;
+
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        column-gap: 30px;
+        margin-left: calc(var(--spacing) * -1);
         row-gap: 24px;
 
     }
@@ -37,8 +40,8 @@
     &__input{
         display: inline-block;
         padding: 18px 30px;
-        width: 570px;
-        max-width: 570px;
+        width: calc(100% / var(--columns) - var(--spacing));
+        margin-left: var(--spacing);
         height: 60px;
         background: #F2F2F2;
         border: none;
